@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--//B27: thêm fragment_sign_in.xml kiểu RelativeLayout-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Sign In"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+</RelativeLayout>

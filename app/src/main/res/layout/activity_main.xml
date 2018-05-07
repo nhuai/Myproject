@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bước 4: đổi activity.xml về RelativeLayout-->
+<!--Bước 5: Mở <android.support.v7.widget.Toolbar-->
+<!--Bước 6: Đặt thuộc tính android:layout_width="match_parent"
+//        android:layout_height="?attr/actionBarSize"-->
+<!--Bước 7: Đặt id: android:id="@+id/toolbar"-->
+<!--Bước 8: Đổ màu toolbar android:background="#FFB90F"-->
+<!--//B12. Đổi layout android.support.v4.widget.DrawerLayout-->
+<!--đẩy Relative layout vào trong-->
+<!--//B13: Vào build.gradle app level thêm implementation 'com.android.support:design:27.1.1'-->
+<!--B14: Mở thẻ <android.support.design.widget.NavigationView-->
+<!--B15: Tạo menu navigation_menu-->
+<!--B17: app:menu="@menu/navigation_menu"-->
+<!--android:layout_gravity="start-->
+<!--B18: thêm id drawerlayout-->
+<!--//B34: thêm tools:openDrawer="start"-->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawerLayout"
+    tools:openDrawer="start"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#8B8B7A"
+            >
+
+        </android.support.v7.widget.Toolbar>
+        <!--B33: Tạo <FrameLayout
+            android:id="@+id/fragment_container"-->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <CalendarView
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </CalendarView>
+    </RelativeLayout>
+<!--B25:app:headerLayout="@layout/navigation_header-->
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+
+        >
+        <!--app:headerLayout="@layout/navigation_header"-->
+    </android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

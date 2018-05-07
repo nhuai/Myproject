@@ -1,0 +1,8 @@
+<resources>
+    <!--//Bước 1: Đổi tên app-->
+    <!--B19:<string name="open">Open</string>
+    <string name="close">Close</string> -->
+    <string name="app_name">Remember Me</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

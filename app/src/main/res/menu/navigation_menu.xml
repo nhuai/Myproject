@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--//B15: Tạo menu navigation_menu-->
+<!--B16: Thêm item-->
+<!--B17: app:menu="@menu/navigation_menu"-->
+<!--B24: thêm icon-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/account"
+        android:icon="@mipmap/ic_account_circle_black_24dp"
+        android:title="Not signed in"/>
+    <item android:id="@+id/notes"
+        android:icon="@mipmap/ic_list_black_24dp"
+        android:title="Notes"/>
+    <item android:id="@+id/calendar"
+        android:icon="@mipmap/ic_event_black_24dp"
+        android:title="Calendar"/>
+    <item android:id="@+id/archive"
+        android:icon="@mipmap/ic_archive_black_24dp"
+        android:title="Archive"/>
+
+    <item android:id="@+id/trash"
+        android:icon="@mipmap/ic_delete_black_24dp"
+        android:title="Trash"/>
+    <item android:id="@+id/search"
+        android:icon="@mipmap/ic_search_black_24dp"
+        android:title="Search"/>
+    <item android:id="@+id/settings"
+        android:icon="@mipmap/ic_settings_black_24dp"
+        android:title="Settings"/>
+
+    <item android:id="@+id/like"
+        android:icon="@mipmap/facebook"
+        android:title="Like us on Facebook"/>
+
+
+</menu>
